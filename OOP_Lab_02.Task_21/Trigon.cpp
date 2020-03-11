@@ -9,21 +9,27 @@ const double PI = 3.14159265;
 Trigon::Trigon() {
 	cout << "Trigon created" << endl;
 }
+Trigon::Trigon(const Trigon& trigon)
+{
+	this->a = trigon.a;
+	this->b = trigon.b;
+	this->c = trigon.c;
+}
 Trigon::~Trigon() {
 	cout << "Trigon is deleted" << endl;
 }
 void Trigon::SetA(int a) {
-	a = this -> a;
+	this -> a = a;
 	if (a < 0)
 		cout << "Mistake" << endl;
 }
 void Trigon::SetB(int b) {
-	b = this ->b;
+	this->b = b;
 	if (b < 0)
 		cout << "Mistake" << endl;
 }
 void Trigon::SetC(int c) {
-	c =this ->c;
+	this->c = c;
 	if (c < 0)
 		cout << "Mistake" << endl;
 }

@@ -4,6 +4,7 @@ class Trigon
 public:
 	double a, b, c;
 	Trigon();
+	Trigon(const Trigon& trigon);
 	~Trigon();
 	void SetA(int a);
 	void SetB(int b);

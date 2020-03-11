@@ -18,4 +18,8 @@ int main()
 	a-> Angle_A_C();
 	a-> Angle_C_B();
 
+	Trigon* b = new Trigon(*a);
+	b->Perimeter();
+	
+
 }
